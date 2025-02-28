@@ -1,0 +1,242 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    background-color: #fff;
+    padding: 0.5rem; /* Reduced padding */
+    display: flex;
+    justify-content: center; /* Center the logo horizontally */
+    align-items: center; /* Center the logo vertically */
+    border-bottom: 1px solid #ddd;
+}
+
+/* Logo */
+.logo {
+    width: 80px; /* Reduced logo size */
+    height: auto;
+}
+
+/* Navigation */
+/* Navigation */
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center; /* Centers items horizontally */
+    gap: 20px; /* Maintains spacing between items */
+    padding: 0;
+    margin: 0; /* Removes default margin */
+    align-items: center; /* Vertically centers items */
+}
+
+nav ul li {
+    display: inline; /* Ensures list items stay inline */
+    position: relative; /* For dropdown positioning */
+}
+
+nav ul li a {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Adds padding for better click area */
+    display: block; /* Ensures full clickable area */
+}
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block; /* Keeps dropdown inline with other items */
+}
+
+/* Dropdown button (same as before, but ensure it stays inline) */
+.dropbtn {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 15px; /* Matches padding of regular links */
+    display: block;
+}
+
+/* Dropdown content (hidden by default) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border: 1px solid #ddd;
+    top: 100%; /* Positions dropdown below the button */
+    left: 0;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #000;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    font-weight: normal;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when hovering */
+.dropdown:hover .dropbtn {
+    background-color: #f1f1f1;
+}
+
+/* Hero Section */
+/* Hero Section */
+.hero {
+    background: url('hero-bg.jpg') no-repeat center center/cover;
+    color: #fff; /* Ensure text is visible on darker backgrounds */
+    text-align: center;
+    padding: 2rem 0; /* Add vertical padding for spacing */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.hero .slideshow-container {
+    display: flex;
+    justify-content: space-between; /* Distribute images evenly */
+    gap: 10px; /* Space between images */
+    width: 100%; /* Full width of the container */
+    margin-bottom: 1rem;
+    overflow: hidden; /* Prevent horizontal scrolling if needed */
+}
+
+.hero .slide img {
+    width: calc(33.33% - 10px); /* Each image takes up one-third of the width minus the gap */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Ensure images fill their containers without distortion */
+}
+
+.hero h1 {
+    font-size: 2rem; /* Adjusted font size for better visibility */
+    margin-bottom: 0.5rem;
+}
+
+.hero p {
+    font-size: 1.2rem; /* Adjusted font size for better visibility */
+    margin-bottom: 1.5rem;
+}
+
+.hero .btn {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75rem 1.5rem;
+    text-decoration: none;
+    font-size: 1rem;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.hero .btn:hover {
+    background-color: #555; /* Hover effect for the button */
+}
+
+/* Product Grid */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+    padding: 2rem;
+}
+.image-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden; /* Prevents zoomed image from overflowing */
+}
+
+.default-img, .hover-img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Added transform to transition */
+    display: block;
+}
+
+.hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transform: scale(1); /* Starting scale */
+}
+
+.image-container:hover .default-img {
+    opacity: 0;
+}
+
+.image-container:hover .hover-img {
+    opacity: 1;
+    transform: scale(1.1); /* Zooms to 110% size - adjust as needed */
+}
+
+.product {
+    text-align: center;
+    max-width: 200px;
+    padding: 1.5cm;
+}
+
+.product img {
+    width: 100%;
+    height: auto;
+}
+
+.buy-now {
+    background-color: #333;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 5px;
+}
+/* Add these styles to your existing CSS */
+
+/* Dropdown container */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    margin: 0%;
+    padding: 0%;
+}
+
+/* Dropdown button */
+.dropbtn {
+    color: #000;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px;
+    display: block;
+}
+
+/* Dropdown content (hidden by default) */
